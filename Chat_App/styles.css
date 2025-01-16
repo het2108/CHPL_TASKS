@@ -22,7 +22,7 @@ body {
 }
 
 .chat-header {
-  background: #007bff;
+  background: #ff0000;
   color: white;
   padding: 15px;
   text-align: center;
@@ -44,7 +44,7 @@ body {
 }
 
 .chat-display .message.sent {
-  background: #007bff;
+  background: #19a817;
   color: white;
   align-self: flex-end;
   text-align: right;
