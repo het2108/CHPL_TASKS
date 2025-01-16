@@ -1,0 +1,36 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin: 100px;
+    margin-left: 530PX;
+    margin-bottom: 0px;
+    color: rgb(32, 18, 227);
+}
+.row{
+    display: flex;
+}
+.col{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.container{
+    padding: 30px;
+    padding-left: 530px;
+}
+#displayWinner{
+    margin: 65px;
+    font-size: 35px;
+    margin-left: 70px;
+    color: blue;
+}
+
+button{
+    margin-left: 110px;
+    size: 250px;
+}
