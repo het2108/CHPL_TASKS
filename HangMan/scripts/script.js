@@ -3,7 +3,7 @@ const guessesText = document.querySelector(".guesses-text b");
 const keyboardDiv = document.querySelector(".keyboard");
 const hangmanImage = document.querySelector(".hangman-box img");
 const gameModal = document.querySelector(".game-modal");
-const playAgainBtn = gameModal.querySelector("button");
+const playAgainButton = gameModal.querySelector("button");
 
 
 // Initializing game variables
@@ -39,6 +39,8 @@ const gameOver = (isVictory) => {
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
     gameModal.classList.add("show");
 }
+
+
 const initGame = (button, clickedLetter) => {
     // Checking if clickedLetter exist's on the currentWord
     if(currentWord.includes(clickedLetter)) {
@@ -63,6 +65,8 @@ const initGame = (button, clickedLetter) => {
     if(wrongGuessCount === maxGuesses) return gameOver(false);  //when player cant guess thw word
     if(correctLetters.length === currentWord.length) return gameOver(true); //when he is able to guess the word
 }
+
+
 // Creating keyboard buttons and adding event listener for buttons
 for (let i = 97; i <= 122; i++) {
     const button = document.createElement("button");
@@ -71,4 +75,4 @@ for (let i = 97; i <= 122; i++) {
     button.addEventListener("click", (e) => initGame(e.target, String.fromCharCode(i)));
 }
 getRandomWord()
-playAgainBtn.addEventListener("click", getRandomWord);         
+playAgainButton.addEventListener("click", getRandomWord);   
